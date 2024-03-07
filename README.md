@@ -25,3 +25,15 @@ In this project I created a Weather Dashboard App that tells the weather forecas
 ![weatherapp - search page](./assets/weatherrr222.JPG)
 
 ![Weatherapp- results page](./assets/mainweatherrr.JPG)
+
+## Collaborators 
+This project was made possible by:
+
+- Rosemary Benson [Github Link](https://github.com/RoseBenson)
+
+## Technologies 
+
+- HTML
+- CSS
+- Javascript
+
