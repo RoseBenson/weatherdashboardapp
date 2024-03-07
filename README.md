@@ -13,3 +13,15 @@ In this project I created a Weather Dashboard App that tells the weather forecas
 - [Technologies](#technologies)
 - [APIs](#apis)
 - [License](#license)
+
+## Usage
+
+#### Access the application on: - 
+
+[Link to deployed page](https://rosebenson.github.io/weatherdashboardapp/)
+
+#### The following images show the application's appearance and functionality:
+
+![weatherapp - search page](./assets/weatherrr222.JPG)
+
+![Weatherapp- results page](./assets/mainweatherrr.JPG)
