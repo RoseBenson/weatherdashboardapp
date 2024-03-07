@@ -86,3 +86,9 @@ searchForm.addEventListener('submit', async (e) => {
   forecastDiv.innerHTML += forecastHTML;
 });
 }
+function showError(message) {
+    const errorDiv = document.createElement('div');
+    errorDiv.textContent = message;
+    errorDiv.style.color = 'red';
+    document.body.insertBefore(errorDiv, document.body.firstChild);
+    } 
