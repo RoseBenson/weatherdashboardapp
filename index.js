@@ -74,4 +74,15 @@ searchForm.addEventListener('submit', async (e) => {
       const iconUrl = `http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`;
   
       const forecastHTML = `
-       
+      <div class="forecast-card">
+      <h5>Date: ${date.toLocaleDateString()}</h5>
+      <img src="${iconUrl}" alt="${forecast.weather[0].description}">
+      <p>Temperature: ${forecast.main.temp}°C</p>
+      <p>Humidity: ${forecast.main.humidity}%</p>
+      <p>Wind Speed: ${forecast.wind.speed} m/s</p>
+    </div>
+  `;
+
+  forecastDiv.innerHTML += forecastHTML;
+});
+}
