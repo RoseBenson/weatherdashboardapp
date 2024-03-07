@@ -66,4 +66,12 @@ searchForm.addEventListener('submit', async (e) => {
     currentWeatherDiv.innerHTML = currentWeatherHTML;
   }
   
- 
+  function displayForecast(data) {
+    const forecasts = data.list.filter((item, index) => index % 8 === 0); // One forecast per day
+  
+    forecasts.forEach(forecast => {
+      const date = new Date(forecast.dt_txt);
+      const iconUrl = `http://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`;
+  
+      const forecastHTML = `
+       
