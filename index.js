@@ -31,3 +31,14 @@ searchForm.addEventListener('submit', async (e) => {
         showError("Could not fetch weather data. Please try again later.");
       }
     }
+    
+  });
+  
+  async function getCurrentWeather(city) {
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}&units=metric`);
+    if (!response.ok) {
+      throw new Error('Unable to fetch current weather data');
+    }
+    return await response.json();
+  }
+ 
