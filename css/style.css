@@ -30,3 +30,12 @@ body {
     background-color: #3a92f0; /* Blue background */
     color: #ffffff; /* White text */
   }
+  
+  .forecast-card h5 {
+    color: #ffffff; /* White text */
+  }
+  
+  .forecast-card img {
+    max-width: 100%;
+  }
+  
