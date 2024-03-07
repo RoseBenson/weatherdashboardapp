@@ -41,4 +41,29 @@ searchForm.addEventListener('submit', async (e) => {
     }
     return await response.json();
   }
+  
+  async function getForecast(city) {
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${APIkey}&units=metric`);
+    if (!response.ok) {
+      throw new Error('Unable to fetch forecast data');
+    }
+    return await response.json();
+  }
+  
+  function displayCurrentWeather(data) {
+    const { name, main, weather, wind } = data;
+    const iconUrl = `http://openweathermap.org/img/wn/${weather[0].icon}.png`;
+  
+    const currentWeatherHTML = `
+      <h2>${name}</h2>
+      <p>Date: ${new Date().toLocaleDateString()}</p>
+      <img src="${iconUrl}" alt="${weather[0].description}">
+      <p>Temperature: ${main.temp}°C</p>
+      <p>Humidity: ${main.humidity}%</p>
+      <p>Wind Speed: ${wind.speed} m/s</p>
+    `;
+  
+    currentWeatherDiv.innerHTML = currentWeatherHTML;
+  }
+  
  
