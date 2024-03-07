@@ -37,3 +37,12 @@ This project was made possible by:
 - CSS
 - Javascript
 
+## APIs 
+
+- [OpenWeather API]()
+
+## License
+
+![MIT License](./assets/License-MIT-blue.svg)
+
+
