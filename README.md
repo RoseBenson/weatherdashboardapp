@@ -39,7 +39,7 @@ This project was made possible by:
 
 ## APIs 
 
-- [OpenWeather API]()
+- [OpenWeather API](https://openweathermap.org/)
 
 ## License
 
